@@ -9,7 +9,9 @@ const meta = {
     argTypes: {
         size: { control: 'select' },
         color: { control: 'select' },
-        fontColor: { control: 'color' }
+        fontColor: { control: 'color' },
+        allCaps: { control: 'boolean' },
+        backgroundColor: { control: 'color' }
     },
     parameters: {
         label: "No label",
@@ -56,6 +58,14 @@ export const CustomFontColor: Story = {
         label: "Custom Font Color",
         size: "h1",
         fontColor: "#5517ac"
+    }
+}
+
+export const CustomBackgroundColor: Story = {
+    args: {
+        label: "Custom Font Color",
+        size: "h1",
+        backgroundColor: "black"
     }
 }
 
